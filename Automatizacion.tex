@@ -31,7 +31,6 @@
 \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}} 
 \usepackage{listings}
 \usepackage{xcolor}
-
 \lstdefinestyle{mypython}{
 	language=Python,
 	keywordstyle=\color{blue},
@@ -46,8 +45,6 @@
 	showstringspaces=false,
 	frame=single
 }
-
-
 \lstset{
 	language=SQL,
 	basicstyle=\linespread{1.2}\ttfamily,
@@ -70,19 +67,14 @@
 	{Á}{{\'A}}1
 	{É}{{\'E}}1
 }
-
 \begin{document}
 	\include{portada}
-	
 \chapter{Resumen}
-	
 	El proyecto consiste en diseñar y desarrollar un prototipo de comunicación en tiempo real entre un dispositivo Arduino y una página web para el monitoreo de la temperatura ambiental. Este sistema permitirá la recopilación, transmisión, almacenamiento y visualización de datos.
 	
-	Para lograr este objetivo, se implementará una interfaz de comunicación serial entre el Arduino y un computador utilizando la biblioteca PySerial. El Arduino estará configurado con un sensor de temperatura para obtener lecturas y enviarlas al computador a través del puerto serial. Un script en Python leerá estos datos del puerto serial y los almacenará en una base de datos previamente configurada para gestionar y organizar la información.
-	
+	Para lograr este objetivo, se implementará una interfaz de comunicación serial entre el Arduino y un computador utilizando la biblioteca PySerial. El Arduino estará configurado con un sensor de temperatura para obtener lecturas y enviarlas al computador a través del puerto serial. Un script en Python leerá estos datos del puerto serial y los almacenará en una base de datos previamente configurada para gestionar y organizar la información.	
 \chapter{Introducción}
-\section{Contexto y justificación}
-	
+\section{Contexto y justificación}	
 \section{Objetivos}
 \subsection{Objetivo General}
 	Diseñar un  sistema de comunicación en tiempo real entre un dispositivo Arduino y una página web.
@@ -92,26 +84,23 @@
 		\item Programar un script en Python que lea los datos del puerto serial y los almacene en una base de datos.
 		\item Configurar una base de datos para almacenar y gestionar los datos de temperatura recibidos desde el Arduino.
 \end{itemize}
-	
-	
 \section{Alcance del proyecto} 
-	
-	\textbf{\begin{flushleft}
+	\textbf{
+	\begin{flushleft}
 			Diseñar y Configurar el Hardware
 	\end{flushleft}}
 \begin{itemize}
 	\item Selección de un sensor de temperatura compatible con Arduino.
 	\item Integración y configuración del sensor con el Arduino para obtener lecturas precisas de temperatura.
 \end{itemize}
-
-	\textbf{\begin{flushleft}
+	\textbf{
+	\begin{flushleft}
 			Implementar la Comunicación Serial
 	\end{flushleft}}
 \begin{itemize}
 	\item Configuración de la biblioteca PySerial en el computador.
 	\item Desarrollo de un script en Python para leer los datos enviados por el Arduino a través del puerto serial.	
 \end{itemize}
-
 
 \section{Hipótesis o preguntas de investigación}
 	
@@ -121,8 +110,6 @@
 \section{Diseño del sistema}
 
 \subsection{Materiales y herramientas}
-
-
 
 	\bibliography{bibliografia}
 \end{document}
